@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #0F1923;
+    --pink: #FF4655;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--green);
+    z-index: 1;
+}
+
+.img {
+    position: absolute;
+    height: 100vh;
+    width: 85%;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.img-right {
+    width: 626.65px;
+    height: 800px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ´Header Start */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+.icon {
+    font-size: 35px;
+    color: #FFF;
+}
+
+/* ´Header End */
+
+/* Cards Start */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: 0px 35px;
+}
+
+.logo-txt {
+    margin-bottom: 40px;
+}
+
+.content-cards {
+    display: flex;
+    gap: 50px;
+    max-width: 610px;
+}
+
+.card {
+    max-width: 170px;
+    height: 170px;
+}
+
+.card .img-card {
+    width: 100%;
+    object-fit: cover;
+}
+
+.icon-media {
+    display: none !important;
+}
+
+
+/* Cards End */
+
+
+
+/* Mobile Start */
+
+@media(max-width: 1380px) {
+
+    .img-right {
+        width: 600px;
+        height: 750px;
+    }
+
+    .content {
+        width: 650px;
+    }
+
+
+}
+
+@media(max-width: 1330px) {
+
+    .img-right {
+        width: 550px;
+        height: 720px;
+    }
+
+    .content {
+        width: 620px;
+    }
+
+}
+
+@media (max-width: 1230px) {
+    .img-right {
+        width: 530px;
+        height: 700px;
+    }
+
+    .content {
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .img-right {
+        width: 400px;
+        height: 600px;
+    }
+
+    .content {
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .img-right,
+    .logo-txt,
+    .icon {
+        display: none !important;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .content-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-media {
+        display: block !important;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translatex(-50%);
+        padding-bottom: 30px;
+
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+}
+
+
+
+
+
+/* Mobile End */
