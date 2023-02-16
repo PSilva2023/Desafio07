@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -37,12 +40,11 @@
     max-width: 1600px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 0px 20px;
 }
 
 .img-right {
-    width: 626.65px;
-    height: 800px;
+    width: 506.39px;
+    height:745.7px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -54,12 +56,12 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 20px 8px 0px 8px;
 }
 
 
 .icon {
-    font-size: 35px;
+    font-size: 30px;
     color: #FFF;
 }
 
@@ -90,6 +92,13 @@
     height: 170px;
 }
 
+.name-card {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #FFF;
+    font-size: 22px;
+}
+
 .card .img-card {
     width: 100%;
     object-fit: cover;
@@ -109,8 +118,8 @@
 @media(max-width: 1380px) {
 
     .img-right {
-        width: 600px;
-        height: 750px;
+        width: 560px;
+        height: 720px;
     }
 
     .content {
@@ -147,17 +156,17 @@
 
 @media (max-width: 1200px) {
     .img-right {
-        width: 400px;
-        height: 600px;
+        width: 450px;
+        height: 650px;
     }
 
     .content {
-        width: 500px;
+        width: 550px;
     }
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
 
     .img-right,
     .logo-txt,
@@ -192,7 +201,17 @@
     }
 
     .header {
-        padding-top: 20px;
+        padding: 20px 5px 0px 5px;
+    }
+
+    .logo-header {
+        max-width: 70px;
+        height: 30px;
+    }
+
+    .card {
+        max-width: 140px;
+        height: 140px;
     }
 }
 
